@@ -1,0 +1,1388 @@
+version: "2.0"
+nlu:
+- intent: chao_hoi
+  examples: |
+    - chào ad
+    - dạ cho em hỏi
+    - Xin chào
+    - hello
+    - hi
+    - chào
+    - alo
+    - bạn ơi
+    - ad ơi
+    - xin chao
+    - chao
+- intent: tam_biet
+  examples: |
+    - good bye
+    - Tạm biệt
+    - Hẹn gặp lại
+    - see you later
+    - good night
+    - bye
+- intent: dong_y
+  examples: |
+    - có
+    - có chứ
+    - tất nhiên rồi
+    - tất nhiên
+    - có vẻ thú vị
+    - đúng rồi
+- intent: hoi_ve_bot
+  examples: |
+    - bạn có phải là một chat bot không
+    - bạn có phải là con người không
+    - mình đang nói chuyện với một chat bot phải không
+    - đầu dây bên kia là ai nhỉ
+    - ai đang trả lời cuộc trò chuyện này
+- intent: phuong_thuc_tuyen_sinh
+  examples: |
+    - các phương thức tuyển sinh
+    - tuyển sinh theo phương thức nào
+    - phương thức tuyển sinh
+    - tuyển sinh mấy phương thức
+    - liệt kê các phương thức tuyển sinh
+    - năm nay tuyển sinh mấy phương thức
+    - phương thức được dùng để tuyển sinh năm nay
+- intent: nganh_dao_tao
+  examples: |
+    - các ngành tuyển sinh
+    - tuyển sinh ngành nào
+    - tuyển sinh các ngành
+    - tuyển sinh các ngành nào
+    - các ngành trường đào tạo
+    - các ngành trường tuyển sinh
+    - các ngành tuyển sinh năm nay
+    - tuyển sinh ngành nào năm nay
+    - năm nay tuyển sinh các ngành
+    - năm nay tuyển sinh các ngành nào
+    - các ngành trường đào tạo năm nay
+    - đào tạo các ngành
+    - trường tuyển sinh ngành nào
+    - các ngành được đào tạo tại trường
+    - có bao nhiêu ngành
+    - có bao nhiêu ngành được đào tạo
+    - trường đào tạo bao nhiêu ngành
+    - cho em hỏi trường mình có các ngành nào ạ
+- intent: hoc_bong
+  examples: |
+    - trường có học bổng không
+    - học bổng cho sinh viên
+    - học bổng cho sinh viên như thế nào
+    - tân sinh viên có học bổng không
+    - có học bổng cho sinh viên không
+    - chính sách học bổng cho sinh viên
+    - chính sách học bổng
+    - học bổng của trường
+    - học bổng của trường như thế nào
+    - các loại học bổng của trường
+    - học bổng của trường có hấp dẫn không
+    - cho em hỏi trường mình có học bổng gì không ạ
+    - học bổng của trường ra sao
+- intent: co_so_vat_chat
+  examples: |
+    - các cơ sở chính
+    - trường có bao nhiêu cơ sở
+    - các cơ sở của trường
+    - các cơ sở của trường ở đâu
+    - có bao nhiêu cơ sở tất cả
+    - trường có mấy cơ sở
+    - cơ sở chính
+    - các cơ sở
+    - cơ sở
+    - cơ sở của trường ở đâu
+    - trường có mấy cơ sở ạ
+- intent: hoat_dong
+  examples: |
+    - các hoạt động của trường
+    - trường có những hoạt động nào
+    - hoạt động trong trường
+    - hoạt động cho sinh viên
+    - hoạt động
+    - sự kiện cho sinh viên
+    - các sự kiện của trường
+- intent: thoi_gian_dao_tao
+  examples: |
+    - ngành ABC đào tạo bao lâu
+    - ngành XYZ học mấy năm
+    - bao lâu thì học xong ngành ABC
+    - ngành XYZ học lâu không
+- intent: diem_chuan
+  examples: |
+    - điểm chuẩn năm trước của trường
+    - điểm chuẩn các ngành
+    - điểm chuẩn các ngành của trường
+    - ngành ABC lấy bao nhiêu điểm
+- intent: gioi_thieu
+  examples: |
+    - giới thiệu về trường
+    - giới thiệu sơ lược về trường mình với ạ
+    - trường đại học Nguyễn Tất Thành có gì
+    - đôi nét về trường
+    - trường đại học Nguyễn Tất Thành là trường như thế nào
+    - sơ lược về trường
+    - giới thiệu ngắn gọn
+    - giới thiệu sơ lược
+    - giới thiệu đôi nét
+    - đôi nét ngắn gọn về trường
+    - trường mình là trường như thế nào ạ
+- intent: chuong_trinh_dao_tao
+  examples: |
+    - cho em hỏi về chương trình đào tạo
+    - trường mình có nhiêu chương trình đào tạo ạ
+    - các chương trình đào tạo trường mình tốt không ạ
+    - chương trình đào tạo của mình có cái gì
+    - chương trinh đào tạo của mình ra sao ạ
+    - chương trình đào tạo như thế nào
+    - chương trình đào tạo
+    - đào tạo như thế nào
+    - đào tạo ra sao
+    - đào tạo
+- intent: hoc_phi
+  examples: |
+    - trường mình mỗi kỳ học phí tầm bao nhiêu ạ
+    - học phí mỗi năm bao nhiêu ạ
+    - cho em hỏi học phí của trường
+    - học phí trung bình của trường
+    - học phí
+    - học phí thế nào ạ
+    - học phí đắt không
+    - học phí như thế nào
+    - học phí ra sao
+    - học phí của trường
+- intent: hp_cntt
+  examples: |
+    - học phí ngành CNTT như nào ạ
+    - ngành CNTT có đắt không
+    - học phí ngành công nghệ thông tin là bao nhiêu
+    - cho em hỏi học phí ngành công nghệ thông tin ạ
+    - ngành công nghệ thông tin mỗi kỳ bao nhiêu ạ
+    - học phí ngành cntt bao nhiêu 1 kỳ ạ
+    - học phí ngành cntt bao nhiêu 1 năm ạ
+    - học phí trung bình 1 học kì ngành CNTT
+    - 1 học kì ngành CNTT bao nhiêu
+    - học phí như nào cho 1 học kì
+    - học phí ổn không
+    - học phí có đắt không
+    - 1 kì học phí tốt không
+    - chi tiết học phí
+    - review học phí của ngành
+- intent: hp_duoc
+  examples: |
+    - học phí ngành Dược học như nào ạ
+    - ngành Dược học có đắt không
+    - học phí trung bình 1 học kì ngành Dược học
+    - 1 học kì ngành Dược học bao nhiêu
+    - học phí ngành  ổn không
+    - học phí 1 kì ngành Dược có đắt không
+    - 1 kì ngành Dược thì học phí tốt không
+    - chi tiết học phí ngành Dược
+    - review học phí 1 kì ngành Dược
+    - 1 kì ngành Dược thì học phí như nào
+- intent: hp_ykhoa
+  examples: |
+    - cho em hỏi học phí ngành y bao nhiêu ạ
+    - ngành y bao nhiêu 1 kỳ ạ
+    - ngành y bao nhiêu 1 năm ạ
+    - học phí ngành Y khoa như nào ạ
+    - ngành Y khoa có đắt không
+    - học phí trung bình 1 học kì ngành Y khoa
+    - 1 học kì ngành Y khoa bao nhiêu
+    - học phí ngành Y khoa ổn không
+    - học phí 1 kì ngành Y khoa có đắt không
+    - 1 kì ngành Y khoa thì học phí tốt không
+    - chi tiết học phí ngành Y khoa
+    - review học phí 1 kì ngành Y khoa
+    - 1 kì ngành Y khoa thì học phí như nào
+- intent: hp_yhdp
+  examples: |
+    - học phí ngành Y học dự phòng như nào ạ
+    - ngành Y học dự phòng có đắt không
+    - học phí trung bình 1 học kì ngành Y học dự phòng
+    - 1 học kì ngành Y học dự phòng bao nhiêu
+    - học phí ngành Y học dự phòng ổn không
+    - học phí 1 kì ngành Y học dự phòng có đắt không
+    - 1 kì ngành Y học dự phòng thì học phí tốt không
+    - chi tiết học phí ngành Y học dự phòng
+    - review học phí 1 kì ngành Y học dự phòng
+    - 1 kì ngành Y học dự phòng thì học phí như nào
+- intent: hp_dduong
+  examples: |
+    - học phí ngành Điều dưỡng như nào ạ
+    - ngành Điều dưỡng có đắt không
+    - học phí trung bình 1 học kì ngành Điều dưỡng
+    - 1 học kì ngành Điều dưỡng bao nhiêu
+    - học phí ngành Điều dưỡng ổn không
+    - học phí 1 kì ngành Điều dưỡng có đắt không
+    - 1 kì ngành Điều dưỡng thì học phí tốt không
+    - chi tiết học phí ngành Điều dưỡng
+    - review học phí 1 kì ngành Điều dưỡng
+    - 1 kì ngành Điều dưỡng thì học phí như nào
+- intent: hp_xnyh
+  examples: |
+    - học phí ngành Kỹ thuật xét nghiệm y học như nào ạ
+    - ngành Kỹ thuật xét nghiệm y học có đắt không
+    - học phí trung bình 1 học kì ngành Kỹ thuật xét nghiệm y học
+    - 1 học kì ngành Kỹ thuật xét nghiệm y học bao nhiêu
+    - học phí ngành Kỹ thuật xét nghiệm y học ổn không
+    - học phí 1 kì ngành Kỹ thuật xét nghiệm y học có đắt không
+    - 1 kì ngành Kỹ thuật xét nghiệm y học thì học phí tốt không
+    - chi tiết học phí ngành Kỹ thuật xét nghiệm y học
+    - review học phí 1 kì ngành Kỹ thuật xét nghiệm y học
+    - 1 kì ngành Kỹ thuật xét nghiệm y học thì học phí như nào
+- intent: hp_qlbv
+  examples: |
+    - học phí ngành Quản lý bệnh viện như nào ạ
+    - ngành Quản lý bệnh viện có đắt không
+    - học phí trung bình 1 học kì ngành Quản lý bệnh viện
+    - 1 học kì ngành Quản lý bệnh viện bao nhiêu
+    - học phí ngành Quản lý bệnh viện ổn không
+    - học phí 1 kì ngành Quản lý bệnh viện có đắt không
+    - 1 kì ngành Quản lý bệnh viện thì học phí tốt không
+    - chi tiết học phí ngành Quản lý bệnh viện
+    - review học phí 1 kì ngành Quản lý bệnh viện
+    - 1 kì ngành Quản lý bệnh viện thì học phí như nào
+- intent: hp_phcn
+  examples: |
+    - học phí ngành Kỹ thuật phục hồi chức năng như nào ạ
+    - ngành Kỹ thuật phục hồi chức năng có đắt không
+    - học phí trung bình 1 học kì ngành Kỹ thuật phục hồi chức năng
+    - 1 học kì ngành Kỹ thuật phục hồi chức năng bao nhiêu
+    - học phí ngành Kỹ thuật phục hồi chức năng ổn không
+    - học phí 1 kì ngành Kỹ thuật phục hồi chức năng có đắt không
+    - 1 kì ngành Kỹ thuật phục hồi chức năng thì học phí tốt không
+    - chi tiết học phí ngành Kỹ thuật phục hồi chức năng
+    - review học phí 1 kì ngành Kỹ thuật phục hồi chức năng
+    - 1 kì ngành Kỹ thuật phục hồi chức năng thì học phí như nào
+- intent: hp_tnhac
+  examples: |
+    - học phí ngành Thanh nhạc như nào ạ
+    - ngành Thanh nhạc có đắt không
+    - học phí trung bình 1 học kì ngành Thanh nhạc
+    - 1 học kì ngành Thanh nhạc bao nhiêu
+    - học phí ngành Thanh nhạc ổn không
+    - học phí 1 kì ngành Thanh nhạc có đắt không
+    - 1 kì ngành Thanh nhạc thì học phí tốt không
+    - chi tiết học phí ngành Thanh nhạc
+    - review học phí 1 kì ngành Thanh nhạc
+    - 1 kì ngành Thanh nhạc thì học phí như nào
+- intent: hp_piano
+  examples: |
+    - học phí ngành Piano như nào ạ
+    - ngành Piano có đắt không
+    - học phí trung bình 1 học kì ngành Piano
+    - 1 học kì ngành Piano bao nhiêu
+    - học phí ngành Piano ổn không
+    - học phí 1 kì ngành Piano có đắt không
+    - 1 kì ngành Piano thì học phí tốt không
+    - chi tiết học phí ngành Piano
+    - review học phí 1 kì ngành Piano
+    - 1 kì ngành Piano thì học phí như nào
+- intent: hp_ddien
+  examples: |
+    - học phí ngành Đạo diễn điện ảnh truyền hình như nào ạ
+    - ngành Đạo diễn điện ảnh truyền hình có đắt không
+    - học phí trung bình 1 học kì ngành Đạo diễn điện ảnh truyền hình
+    - 1 học kì ngành Đạo diễn điện ảnh truyền hình bao nhiêu
+    - học phí ngành Đạo diễn điện ảnh truyền hình ổn không
+    - học phí 1 kì ngành Đạo diễn điện ảnh truyền hình có đắt không
+    - 1 kì ngành Đạo diễn điện ảnh truyền hình thì học phí tốt không
+    - chi tiết học phí ngành Đạo diễn điện ảnh truyền hình
+    - review học phí 1 kì ngành Đạo diễn điện ảnh truyền hình
+    - 1 kì ngành Đạo diễn điện ảnh truyền hình thì học phí như nào
+- intent: hp_qphim
+  examples: |
+    - học phí ngành Quay phim như nào ạ
+    - ngành Quay phim có đắt không
+    - học phí trung bình 1 học kì ngành Quay phim
+    - 1 học kì ngành Quay phim bao nhiêu
+    - học phí ngành Quay phim ổn không
+    - học phí 1 kì ngành Quay phim có đắt không
+    - 1 kì ngành Quay phim thì học phí tốt không
+    - chi tiết học phí ngành Quay phim
+    - review học phí 1 kì ngành Quay phim
+    - 1 kì ngành Quay phim thì học phí như nào
+- intent: hp_tkdh
+  examples: |
+    - học phí ngành Thiết kế đồ họa như nào ạ
+    - ngành Thiết kế đồ họa có đắt không
+    - học phí trung bình 1 học kì ngành Thiết kế đồ họa
+    - 1 học kì ngành Thiết kế đồ họa bao nhiêu
+    - học phí ngành Thiết kế đồ họa ổn không
+    - học phí 1 kì ngành Thiết kế đồ họa có đắt không
+    - 1 kì ngành Thiết kế đồ họa thì học phí tốt không
+    - chi tiết học phí ngành Thiết kế đồ họa
+    - review học phí 1 kì ngành Thiết kế đồ họa
+    - 1 kì ngành Thiết kế đồ họa thì học phí như nào
+- intent: hp_vhvn
+  examples: |
+    - học phí ngành Tiếng Việt và văn hóa Việt Nam như nào ạ
+    - ngành Tiếng Việt và văn hóa Việt Nam có đắt không
+    - học phí trung bình 1 học kì ngành Tiếng Việt và văn hóa Việt Nam
+    - 1 học kì ngành Tiếng Việt và văn hóa Việt Nam bao nhiêu
+    - học phí ngành Tiếng Việt và văn hóa Việt Nam ổn không
+    - học phí 1 kì ngành Tiếng Việt và văn hóa Việt Nam có đắt không
+    - 1 kì ngành Tiếng Việt và văn hóa Việt Nam thì học phí tốt không
+    - chi tiết học phí ngành Tiếng Việt và văn hóa Việt Nam
+    - review học phí 1 kì ngành Tiếng Việt và văn hóa Việt Nam
+    - 1 kì ngành Tiếng Việt và văn hóa Việt Nam thì học phí như nào
+- intent: hp_nna
+  examples: |
+    - học phí ngành Ngôn ngữ Anh như nào ạ
+    - ngành Ngôn ngữ Anh có đắt không
+    - học phí trung bình 1 học kì ngành Ngôn ngữ Anh
+    - 1 học kì ngành Ngôn ngữ Anh bao nhiêu
+    - học phí ngành Ngôn ngữ Anh ổn không
+    - học phí 1 kì ngành Ngôn ngữ Anh có đắt không
+    - 1 kì ngành Ngôn ngữ Anh thì học phí tốt không
+    - chi tiết học phí ngành Ngôn ngữ Anh
+    - review học phí 1 kì ngành Ngôn ngữ Anh
+    - 1 kì ngành Ngôn ngữ Anh thì học phí như nào
+- intent: hp_nntq
+  examples: |
+    - học phí ngành Ngôn ngữ Trung Quốc như nào ạ
+    - ngành Ngôn ngữ Trung Quốc có đắt không
+    - học phí trung bình 1 học kì ngành Ngôn ngữ Trung Quốc
+    - 1 học kì ngành Ngôn ngữ Trung Quốc bao nhiêu
+    - học phí ngành Ngôn ngữ Trung Quốc ổn không
+    - học phí 1 kì ngành Ngôn ngữ Trung Quốc có đắt không
+    - 1 kì ngành Ngôn ngữ Trung Quốc thì học phí tốt không
+    - chi tiết học phí ngành Ngôn ngữ Trung Quốc
+    - review học phí 1 kì ngành Ngôn ngữ Trung Quốc
+    - 1 kì ngành Ngôn ngữ Trung Quốc thì học phí như nào
+- intent: hp_qhqt
+  examples: |
+    - học phí ngành Quan hệ quốc tế như nào ạ
+    - ngành Quan hệ quốc tế có đắt không
+    - học phí trung bình 1 học kì ngành Quan hệ quốc tế
+    - 1 học kì ngành Quan hệ quốc tế bao nhiêu
+    - học phí ngành Quan hệ quốc tế ổn không
+    - học phí 1 kì ngành Quan hệ quốc tế có đắt không
+    - 1 kì ngành Quan hệ quốc tế thì học phí tốt không
+    - chi tiết học phí ngành Quan hệ quốc tế
+    - review học phí 1 kì ngành Quan hệ quốc tế
+    - 1 kì ngành Quan hệ quốc tế thì học phí như nào
+- intent: hp_tlh
+  examples: |
+    - học phí ngành Tâm lý học như nào ạ
+    - ngành Tâm lý học có đắt không
+    - học phí trung bình 1 học kì ngành Tâm lý học
+    - 1 học kì ngành Tâm lý học bao nhiêu
+    - học phí ngành Tâm lý học ổn không
+    - học phí 1 kì ngành Tâm lý học có đắt không
+    - 1 kì ngành Tâm lý học thì học phí tốt không
+    - chi tiết học phí ngành Tâm lý học
+    - review học phí 1 kì ngành Tâm lý học
+    - 1 kì ngành Tâm lý học thì học phí như nào
+- intent: hp_dph
+  examples: |
+    - học phí ngành Đông phương học như nào ạ
+    - ngành Đông phương học có đắt không
+    - học phí trung bình 1 học kì ngành Đông phương học
+    - 1 học kì ngành Đông phương học bao nhiêu
+    - học phí ngành Đông phương học ổn không
+    - học phí 1 kì ngành Đông phương học có đắt không
+    - 1 kì ngành Đông phương học thì học phí tốt không
+    - chi tiết học phí ngành Đông phương học
+    - review học phí 1 kì ngành Đông phương học
+    - 1 kì ngành Đông phương học thì học phí như nào
+- intent: hp_vnh
+  examples: |
+    - học phí ngành Việt Nam học như nào ạ
+    - ngành Việt Nam học có đắt không
+    - học phí trung bình 1 học kì ngành Việt Nam học
+    - 1 học kì ngành Việt Nam học bao nhiêu
+    - học phí ngành Việt Nam học ổn không
+    - học phí 1 kì ngành Việt Nam học có đắt không
+    - 1 kì ngành Việt Nam học thì học phí tốt không
+    - chi tiết học phí ngành Việt Nam học
+    - review học phí 1 kì ngành Việt Nam học
+    - 1 kì ngành Việt Nam học thì học phí như nào
+- intent: hp_dpt
+  examples: |
+    - học phí ngành Truyền thông đa phương tiện như nào ạ
+    - ngành Truyền thông đa phương tiện có đắt không
+    - học phí trung bình 1 học kì ngành Truyền thông đa phương tiện
+    - 1 học kì ngành Truyền thông đa phương tiện bao nhiêu
+    - học phí ngành Truyền thông đa phương tiện ổn không
+    - học phí 1 kì ngành Truyền thông đa phương tiện có đắt không
+    - 1 kì ngành Truyền thông đa phương tiện thì học phí tốt không
+    - chi tiết học phí ngành Truyền thông đa phương tiện
+    - review học phí 1 kì ngành Truyền thông đa phương tiện
+    - 1 kì ngành Truyền thông đa phương tiện thì học phí như nào
+- intent: hp_qhcc
+  examples: |
+    - học phí ngành Quan hệ công chúng như nào ạ
+    - ngành Quan hệ công chúng có đắt không
+    - học phí trung bình 1 học kì ngành Quan hệ công chúng
+    - 1 học kì ngành Quan hệ công chúng bao nhiêu
+    - học phí ngành Quan hệ công chúng ổn không
+    - học phí 1 kì ngành Quan hệ công chúng có đắt không
+    - 1 kì ngành Quan hệ công chúng thì học phí tốt không
+    - chi tiết học phí ngành Quan hệ công chúng
+    - review học phí 1 kì ngành Quan hệ công chúng
+    - 1 kì ngành Quan hệ công chúng thì học phí như nào
+- intent: hp_qtkd
+  examples: |
+    - học phí ngành Quản trị kinh doanh như nào ạ
+    - ngành Quản trị kinh doanh có đắt không
+    - học phí trung bình 1 học kì ngành Quản trị kinh doanh
+    - 1 học kì ngành Quản trị kinh doanh bao nhiêu
+    - học phí ngành Quản trị kinh doanh ổn không
+    - học phí 1 kì ngành Quản trị kinh doanh có đắt không
+    - 1 kì ngành Quản trị kinh doanh thì học phí tốt không
+    - chi tiết học phí ngành Quản trị kinh doanh
+    - review học phí 1 kì ngành Quản trị kinh doanh
+    - 1 kì ngành Quản trị kinh doanh thì học phí như nào
+- intent: hp_mar
+  examples: |
+    - học phí ngành Marketing như nào ạ
+    - ngành Marketing có đắt không
+    - học phí trung bình 1 học kì ngành Marketing
+    - 1 học kì ngành Marketing bao nhiêu
+    - học phí ngành Marketing ổn không
+    - học phí 1 kì ngành Marketing có đắt không
+    - 1 kì ngành Marketing thì học phí tốt không
+    - chi tiết học phí ngành Marketing
+    - review học phí 1 kì ngành Marketing
+    - 1 kì ngành Marketing thì học phí như nào
+- intent: hp_kdqt
+  examples: |
+    - học phí ngành Kinh doanh quốc tế như nào ạ
+    - ngành Kinh doanh quốc tế có đắt không
+    - học phí trung bình 1 học kì ngành Kinh doanh quốc tế
+    - 1 học kì ngành Kinh doanh quốc tế bao nhiêu
+    - học phí ngành Kinh doanh quốc tế ổn không
+    - học phí 1 kì ngành Kinh doanh quốc tế có đắt không
+    - 1 kì ngành Kinh doanh quốc tế thì học phí tốt không
+    - chi tiết học phí ngành Kinh doanh quốc tế
+    - review học phí 1 kì ngành Kinh doanh quốc tế
+    - 1 kì ngành Kinh doanh quốc tế thì học phí như nào
+- intent: hp_tmdt
+  examples: |
+    - học phí ngành Thương mại điện tử như nào ạ
+    - ngành Thương mại điện tử có đắt không
+    - học phí trung bình 1 học kì ngành Thương mại điện tử
+    - 1 học kì ngành Thương mại điện tử bao nhiêu
+    - học phí ngành Thương mại điện tử ổn không
+    - học phí 1 kì ngành Thương mại điện tử có đắt không
+    - 1 kì ngành Thương mại điện tử thì học phí tốt không
+    - chi tiết học phí ngành Thương mại điện tử
+    - review học phí 1 kì ngành Thương mại điện tử
+    - 1 kì ngành Thương mại điện tử thì học phí như nào
+- intent: hp_tcnh
+  examples: |
+    - học phí ngành Tài chính - Ngân hàng như nào ạ
+    - ngành Tài chính - Ngân hàng có đắt không
+    - học phí trung bình 1 học kì ngành Tài chính - Ngân hàng
+    - 1 học kì ngành Tài chính - Ngân hàng bao nhiêu
+    - học phí ngành Tài chính - Ngân hàng ổn không
+    - học phí 1 kì ngành Tài chính - Ngân hàng có đắt không
+    - 1 kì ngành Tài chính - Ngân hàng thì học phí tốt không
+    - chi tiết học phí ngành Tài chính - Ngân hàng
+    - review học phí 1 kì ngành Tài chính - Ngân hàng
+    - 1 kì ngành Tài chính - Ngân hàng thì học phí như nào
+- intent: hp_ktoan
+  examples: |
+    - học phí ngành Kế toán như nào ạ
+    - ngành Kế toán có đắt không
+    - học phí trung bình 1 học kì ngành Kế toán
+    - 1 học kì ngành Kế toán bao nhiêu
+    - học phí ngành Kế toán ổn không
+    - học phí 1 kì ngành Kế toán có đắt không
+    - 1 kì ngành Kế toán thì học phí tốt không
+    - chi tiết học phí ngành Kế toán
+    - review học phí 1 kì ngành Kế toán
+    - 1 kì ngành Kế toán thì học phí như nào
+- intent: hp_qtnl
+  examples: |
+    - học phí ngành Quản trị nhân lực như nào ạ
+    - ngành Quản trị nhân lực có đắt không
+    - học phí trung bình 1 học kì ngành Quản trị nhân lực
+    - 1 học kì ngành Quản trị nhân lực bao nhiêu
+    - học phí ngành Quản trị nhân lực ổn không
+    - học phí 1 kì ngành Quản trị nhân lực có đắt không
+    - 1 kì ngành Quản trị nhân lực thì học phí tốt không
+    - chi tiết học phí ngành Quản trị nhân lực
+    - review học phí 1 kì ngành Quản trị nhân lực
+    - 1 kì ngành Quản trị nhân lực thì học phí như nào
+- intent: hp_lkt
+  examples: |
+    - học phí ngành  như nào ạ
+    - ngành Luật kinh tế có đắt không
+    - học phí trung bình 1 học kì ngành Luật kinh tế
+    - 1 học kì ngànhLuật kinh tế Luật kinh tế bao nhiêu
+    - học phí ngành Luật kinh tế ổn không
+    - học phí 1 kì ngành Luật kinh tếcó đắt không
+    - 1 kì ngành Luật kinh tế thì học phí tốt không
+    - chi tiết học phí ngành Luật kinh tế
+    - review học phí 1 kì ngành Luật kinh tế
+    - 1 kì ngành Luật kinh tế thì học phí như nào
+- intent: hp_cnsh
+  examples: |
+    - học phí ngành Công nghệ sinh học như nào ạ
+    - ngành Công nghệ sinh học có đắt không
+    - học phí trung bình 1 học kì ngành Công nghệ sinh học
+    - 1 học kì ngành Công nghệ sinh học bao nhiêu
+    - học phí 1 kì ngành Công nghệ sinh học có đắt không
+    - 1 kì ngành Công nghệ sinh học thì học phí tốt không
+    - chi tiết học phí ngành Công nghệ sinh học
+    - review học phí 1 kì ngành Công nghệ sinh học
+    - 1 kì ngành Công nghệ sinh học thì học phí như nào
+- intent: hp_mmt
+  examples: |
+    - học phí ngành Mạng máy tính và truyền thông dữ liệu như nào ạ
+    - ngành Mạng máy tính và truyền thông dữ liệu có đắt không
+    - học phí trung bình 1 học kì ngành Mạng máy tính và truyền thông dữ liệu
+    - 1 học kì ngành Mạng máy tính và truyền thông dữ liệu bao nhiêu
+    - học phí ngành Mạng máy tính và truyền thông dữ liệu ổn không
+    - học phí 1 kì ngành Mạng máy tính và truyền thông dữ liệu có đắt không
+    - 1 kì ngành Mạng máy tính và truyền thông dữ liệu thì học phí tốt không
+    - chi tiết học phí ngành Mạng máy tính và truyền thông dữ liệu
+    - review học phí 1 kì ngành Mạng máy tính và truyền thông dữ liệu
+    - 1 kì ngành Mạng máy tính và truyền thông dữ liệu thì học phí như nào
+- intent: hp_ktpm
+  examples: |
+    - học phí ngành Kỹ thuật phần mềm như nào ạ
+    - ngành Kỹ thuật phần mềm có đắt không
+    - học phí trung bình 1 học kì ngành Kỹ thuật phần mềm
+    - 1 học kì ngành Kỹ thuật phần mềm bao nhiêu
+    - học phí ngành Kỹ thuật phần mềm ổn không
+    - học phí 1 kì ngành Kỹ thuật phần mềm có đắt không
+    - 1 kì ngành Kỹ thuật phần mềm thì học phí tốt không
+    - chi tiết học phí ngành Kỹ thuật phần mềm
+    - review học phí 1 kì ngành Kỹ thuật phần mềm
+    - 1 kì ngành Kỹ thuật phần mềm thì học phí như nào
+- intent: hp_cdt
+  examples: |
+    - học phí ngành Công nghệ kỹ thuật cơ điện tử như nào ạ
+    - ngành Công nghệ kỹ thuật cơ điện tử có đắt không
+    - học phí trung bình 1 học kì ngành Công nghệ kỹ thuật cơ điện tử
+    - 1 học kì ngành Công nghệ kỹ thuật cơ điện tử bao nhiêu
+    - học phí ngành Công nghệ kỹ thuật cơ điện tử ổn không
+    - học phí 1 kì ngành Công nghệ kỹ thuật cơ điện tử có đắt không
+    - 1 kì ngành Công nghệ kỹ thuật cơ điện tử thì học phí tốt không
+    - chi tiết học phí ngành Công nghệ kỹ thuật cơ điện tử
+    - review học phí 1 kì ngành Công nghệ kỹ thuật cơ điện tử
+    - 1 kì ngành Công nghệ kỹ thuật cơ điện tử thì học phí như nào
+- intent: hp_oto
+  examples: |
+    - học phí ngành Công nghệ kỹ thuật ô tô như nào ạ
+    - ngành Công nghệ kỹ thuật ô tô có đắt không
+    - học phí trung bình 1 học kì ngành Công nghệ kỹ thuật ô tô
+    - 1 học kì ngành Công nghệ kỹ thuật ô tô bao nhiêu
+    - học phí ngành Công nghệ kỹ thuật ô tô ổn không
+    - học phí 1 kì ngành Công nghệ kỹ thuật ô tô có đắt không
+    - 1 kì ngành Công nghệ kỹ thuật ô tô thì học phí tốt không
+    - chi tiết học phí ngành Công nghệ kỹ thuật ô tô
+    - review học phí 1 kì ngành Công nghệ kỹ thuật ô tô
+    - 1 kì ngành Công nghệ kỹ thuật ô tô thì học phí như nào
+- intent: hp_ddt
+  examples: |
+    - học phí ngành Công nghệ kỹ thuật điện điện tử như nào ạ
+    - ngành Công nghệ kỹ thuật điện điện tử có đắt không
+    - học phí trung bình 1 học kì ngành Công nghệ kỹ thuật điện điện tử
+    - 1 học kì ngành Công nghệ kỹ thuật điện điện tử bao nhiêu
+    - học phí ngành Công nghệ kỹ thuật điện điện tử ổn không
+    - học phí 1 kì ngành Công nghệ kỹ thuật điện điện tử có đắt không
+    - 1 kì ngành Công nghệ kỹ thuật điện điện tử thì học phí tốt không
+    - chi tiết học phí ngành Công nghệ kỹ thuật điện điện tử
+    - review học phí 1 kì ngành Công nghệ kỹ thuật điện điện tử
+    - 1 kì ngành Công nghệ kỹ thuật điện điện tử thì học phí như nào
+- intent: hp_kthh
+  examples: |
+    - học phí ngành Công nghệ kỹ thuật hóa học như nào ạ
+    - ngành Công nghệ kỹ thuật hóa học có đắt không
+    - học phí trung bình 1 học kì ngành Công nghệ kỹ thuật hóa học
+    - 1 học kì ngành Công nghệ kỹ thuật hóa học bao nhiêu
+    - học phí ngành Công nghệ kỹ thuật hóa học ổn không
+    - học phí 1 kì ngành Công nghệ kỹ thuật hóa học có đắt không
+    - 1 kì ngành Công nghệ kỹ thuật hóa học thì học phí tốt không
+    - chi tiết học phí ngành Công nghệ kỹ thuật hóa học
+    - review học phí 1 kì ngành Công nghệ kỹ thuật hóa học
+    - 1 kì ngành Công nghệ kỹ thuật hóa học thì học phí như nào
+- intent: hp_log
+  examples: |
+    - học phí ngành Logistics và quản lý chuỗi cung ứng như nào ạ
+    - ngành Logistics và quản lý chuỗi cung ứng có đắt không
+    - học phí trung bình 1 học kì ngành Logistics và quản lý chuỗi cung ứng
+    - 1 học kì ngành Logistics và quản lý chuỗi cung ứng bao nhiêu
+    - học phí ngành Logistics và quản lý chuỗi cung ứng ổn không
+    - học phí 1 kì ngành Logistics và quản lý chuỗi cung ứng có đắt không
+    - 1 kì ngành Logistics và quản lý chuỗi cung ứng thì học phí tốt không
+    - chi tiết học phí ngành Logistics và quản lý chuỗi cung ứng
+    - review học phí 1 kì ngành Logistics và quản lý chuỗi cung ứng
+    - 1 kì ngành Logistics và quản lý chuỗi cung ứng thì học phí như nào
+- intent: hp_htcn
+  examples: |
+    - học phí ngành Kỹ thuật hệ thống công nghiệp như nào ạ
+    - ngành Kỹ thuật hệ thống công nghiệp có đắt không
+    - học phí trung bình 1 học kì ngành Kỹ thuật hệ thống công nghiệp
+    - 1 học kì ngành Kỹ thuật hệ thống công nghiệp bao nhiêu
+    - học phí ngành Kỹ thuật hệ thống công nghiệp ổn không
+    - học phí 1 kì ngành Kỹ thuật hệ thống công nghiệp có đắt không
+    - 1 kì ngành Kỹ thuật hệ thống công nghiệp thì học phí tốt không
+    - chi tiết học phí ngành Kỹ thuật hệ thống công nghiệp
+    - review học phí 1 kì ngành Kỹ thuật hệ thống công nghiệp
+    - 1 kì ngành Kỹ thuật hệ thống công nghiệp thì học phí như nào
+- intent: hp_ktys
+  examples: |
+    - học phí ngành Kỹ thuật y sinh như nào ạ
+    - ngành Kỹ thuật y sinh có đắt không
+    - học phí trung bình 1 học kì ngành Kỹ thuật y sinh
+    - 1 học kì ngành Kỹ thuật y sinh bao nhiêu
+    - học phí ngành Kỹ thuật y sinh ổn không
+    - học phí 1 kì ngành Kỹ thuật y sinh có đắt không
+    - 1 kì ngành Kỹ thuật y sinh thì học phí tốt không
+    - chi tiết học phí ngành Kỹ thuật y sinh
+    - review học phí 1 kì ngành Kỹ thuật y sinh
+    - 1 kì ngành Kỹ thuật y sinh thì học phí như nào
+- intent: hp_vlyk
+  examples: |
+    - học phí ngành Vật lý y khoa như nào ạ
+    - ngành Vật lý y khoa có đắt không
+    - học phí trung bình 1 học kì ngành Vật lý y khoa
+    - 1 học kì ngành Vật lý y khoa bao nhiêu
+    - học phí ngành Vật lý y khoa ổn không
+    - học phí 1 kì ngành Vật lý y khoa có đắt không
+    - 1 kì ngành Vật lý y khoa thì học phí tốt không
+    - chi tiết học phí ngành Vật lý y khoa
+    - review học phí 1 kì ngành Vật lý y khoa
+    - 1 kì ngành Vật lý y khoa thì học phí như nào
+- intent: hp_cntp
+  examples: |
+    - học phí ngành Công nghệ thực phẩm như nào ạ
+    - ngành Công nghệ thực phẩm có đắt không
+    - học phí trung bình 1 học kì ngành Công nghệ thực phẩm
+    - 1 học kì ngành Công nghệ thực phẩm bao nhiêu
+    - học phí ngành Công nghệ thực phẩm ổn không
+    - học phí 1 kì ngành Công nghệ thực phẩm có đắt không
+    - 1 kì ngành Công nghệ thực phẩm thì học phí tốt không
+    - chi tiết học phí ngành Công nghệ thực phẩm
+    - review học phí 1 kì ngành Công nghệ thực phẩm
+    - 1 kì ngành Công nghệ thực phẩm thì học phí như nào
+- intent: hp_ktruc
+  examples: |
+    - học phí ngành Kiến trúc như nào ạ
+    - ngành Kiến trúc có đắt không
+    - học phí trung bình 1 học kì ngành Kiến trúc
+    - 1 học kì ngành Kiến trúc bao nhiêu
+    - học phí ngành Kiến trúc ổn không
+    - học phí 1 kì ngành Kiến trúc có đắt không
+    - 1 kì ngành Kiến trúc thì học phí tốt không
+    - chi tiết học phí ngành Kiến trúc
+    - review học phí 1 kì ngành Kiến trúc
+    - 1 kì ngành Kiến trúc thì học phí như nào
+- intent: hp_tknt
+  examples: |
+    - học phí ngành Thiết kế nội thất như nào ạ
+    - ngành Thiết kế nội thất có đắt không
+    - học phí trung bình 1 học kì ngành Thiết kế nội thất
+    - 1 học kì ngành Thiết kế nội thất bao nhiêu
+    - học phí ngành Thiết kế nội thất ổn không
+    - học phí 1 kì ngành Thiết kế nội thất có đắt không
+    - 1 kì ngành Thiết kế nội thất thì học phí tốt không
+    - chi tiết học phí ngành Thiết kế nội thất
+    - review học phí 1 kì ngành Thiết kế nội thất
+    - 1 kì ngành Thiết kế nội thất thì học phí như nào
+- intent: hp_ktxd
+  examples: |
+    - học phí ngành Kỹ thuật xây dựng như nào ạ
+    - ngành Kỹ thuật xây dựng có đắt không
+    - học phí trung bình 1 học kì ngành Kỹ thuật xây dựng
+    - 1 học kì ngành Kỹ thuật xây dựng bao nhiêu
+    - học phí ngành Kỹ thuật xây dựng ổn không
+    - học phí 1 kì ngành Kỹ thuật xây dựng có đắt không
+    - 1 kì ngành Kỹ thuật xây dựng thì học phí tốt không
+    - chi tiết học phí ngành Kỹ thuật xây dựng
+    - review học phí 1 kì ngành Kỹ thuật xây dựng
+    - 1 kì ngành Kỹ thuật xây dựng thì học phí như nào
+- intent: hp_dlich
+  examples: |
+    - học phí ngành Du lịch như nào ạ
+    - ngành Du lịch có đắt không
+    - học phí trung bình 1 học kì ngành Du lịch
+    - 1 học kì ngành Du lịch bao nhiêu
+    - học phí ngành Du lịch ổn không
+    - học phí 1 kì ngành Du lịch có đắt không
+    - 1 kì ngành Du lịch thì học phí tốt không
+    - chi tiết học phí ngành Du lịch
+    - review học phí 1 kì ngành Du lịch
+    - 1 kì ngành Du lịch thì học phí như nào
+- intent: hp_qtks
+  examples: |
+    - học phí ngành Quản trị khách sạn như nào ạ
+    - ngành Quản trị khách sạn có đắt không
+    - học phí trung bình 1 học kì ngành Quản trị khách sạn
+    - 1 học kì ngành Quản trị khách sạn bao nhiêu
+    - học phí ngành Quản trị khách sạn ổn không
+    - học phí 1 kì ngành Quản trị khách sạn có đắt không
+    - 1 kì ngành Quản trị khách sạn thì học phí tốt không
+    - chi tiết học phí ngành Quản trị khách sạn
+    - review học phí 1 kì ngành Quản trị khách sạn
+    - 1 kì ngành Quản trị khách sạn thì học phí như nào
+- intent: hp_nhhang
+  examples: |
+    - học phí ngành Quản trị nhà hàng và dịch vụ ăn uống như nào ạ
+    - ngành Quản trị nhà hàng và dịch vụ ăn uống có đắt không
+    - học phí trung bình 1 học kì ngành Quản trị nhà hàng và dịch vụ ăn uống
+    - 1 học kì ngành Quản trị nhà hàng và dịch vụ ăn uống bao nhiêu
+    - học phí ngành Quản trị nhà hàng và dịch vụ ăn uống ổn không
+    - học phí 1 kì ngành Quản trị nhà hàng và dịch vụ ăn uống có đắt không
+    - 1 kì ngành Quản trị nhà hàng và dịch vụ ăn uống thì học phí tốt không
+    - chi tiết học phí ngành Quản trị nhà hàng và dịch vụ ăn uống
+    - review học phí 1 kì ngành Quản trị nhà hàng và dịch vụ ăn uống
+    - 1 kì ngành Quản trị nhà hàng và dịch vụ ăn uống thì học phí như nào
+- intent: hp_tnmt
+  examples: |
+    - học phí ngành Quản lý tài nguyên và môi trường như nào ạ
+    - ngành Quản lý tài nguyên và môi trường có đắt không
+    - học phí trung bình 1 học kì ngành Quản lý tài nguyên và môi trường
+    - 1 học kì ngành Quản lý tài nguyên và môi trường bao nhiêu
+    - học phí ngành Quản lý tài nguyên và môi trường ổn không
+    - học phí 1 kì ngành Quản lý tài nguyên và môi trường có đắt không
+    - 1 kì ngành Quản lý tài nguyên và môi trường thì học phí tốt không
+    - chi tiết học phí ngành Quản lý tài nguyên và môi trường
+    - review học phí 1 kì ngành Quản lý tài nguyên và môi trường
+    - 1 kì ngành Quản lý tài nguyên và môi trường thì học phí như nào
+- intent: hp_gdmn
+  examples: |
+    - học phí ngành Giáo dục mầm non như nào ạ
+    - ngành Giáo dục mầm non có đắt không
+    - học phí trung bình 1 học kì ngành Giáo dục mầm non
+    - 1 học kì ngành Giáo dục mầm non bao nhiêu
+    - học phí ngành Giáo dục mầm non ổn không
+    - học phí 1 kì ngành Giáo dục mầm non có đắt không
+    - 1 kì ngành Giáo dục mầm non thì học phí tốt không
+    - chi tiết học phí ngành Giáo dục mầm non
+    - review học phí 1 kì ngành Giáo dục mầm non
+    - 1 kì ngành Giáo dục mầm non thì học phí như nào
+- intent: gt_duoc
+  examples: |
+    - dược học là ngành như thế nào
+    - giới thiệu về ngành Dược học được không ạ
+    - ngành dược học là ngành gì
+    - như thế nào là dược học
+    - dược học là gì
+    - giới thiệu dược học
+    - dược học
+    - giới thiệu một chút về dược học đi
+    - giới thiệu dược học đi
+    - giới thiệu về dược học đi
+    - giới thiệu về dược học
+- intent: gt_xnyh
+  examples: |
+    - giới thiệu về ngành Kỹ thuật xét nghiệm y học được không ạ
+    - Kỹ thuật xét nghiệm y học là ngành như thế nào
+    - giới thiệu đôi chút về ngành Kỹ thuật xét nghiệm y học được không ạ
+    - kỹ thuật xét nghiệm y khoa là ngành gì
+    - giới thiệu kỹ thuật xét nghiệm y khoa
+    - kỹ thuật xét nghiệm y khoa là gì
+    - kỹ thuật xét nghiệm y khoa
+    - giới thiệu kỹ thuật xét nghiệm y khoa đi
+    - giới thiệu một chút về dược học đi
+    - giới thiệu về kỹ thuật xét nghiệm y khoa đi
+    - giới thiệu về kỹ thuật xét nghiệm y khoa
+- intent: gt_ykhoa
+  examples: |
+    - giới thiệu về ngành Y khoa được không ạ
+    - Y khoa là ngành như thế nào
+    - giới thiệu đôi chút về ngành Y khoa được không ạ
+    - y khoa là ngành gì
+    - y khoa là gì
+    - y khoa
+    - giới thiệu về y khoa đi
+    - giới thiệu y khoa đi
+    - giới thiệu một chút về y khoa đi
+    - giới thiệu về y khoa
+    - giới thiệu y khoa
+- intent: gt_yhdp
+  examples: |
+    - giới thiệu về ngành Y học dự phòng được không ạ
+    - Y học dự phòng là ngành như thế nào
+    - giới thiệu đôi chút về ngành Y học dự phòng được không ạ
+    - y học dự phòng là ngành gì
+    - y học dự phòng là gì
+    - y học dự phòng
+    - giới thiệu về y học dự phòng đi
+    - giới thiệu y học dự phòng đi
+    - giới thiệu một chút về y học dự phòng đi
+    - giới thiệu về y học dự phòng
+    - giới thiệu y học dự phòng
+- intent: gt_dduong
+  examples: |
+    - giới thiệu về ngành Điều dưỡng được không ạ
+    - Điều dưỡng là ngành như thế nào
+    - giới thiệu đôi chút về ngành Điều dưỡng được không ạ
+    - điều dưỡng là ngành gì
+    - điều dưỡng là gì
+    - điều dưỡng
+    - giới thiệu về điều dưỡng đi
+    - giới thiệu điều dưỡng đi
+    - giới thiệu một chút về điều dưỡng đi
+    - giới thiệu về điều dưỡng
+    - giới thiệu điều dưỡng
+- intent: gt_tnhac
+  examples: |
+    - giới thiệu về ngành Thanh nhạc được không ạ
+    - Thanh nhạc là ngành như thế nào
+    - giới thiệu đôi chút về ngành Thanh nhạc được không ạ
+    - thanh nhạc là ngành gì
+    - thanh nhạc là gì
+    - thanh nhạc
+    - giới thiệu về thanh nhạc đi
+    - giới thiệu thanh nhạc đi
+    - giới thiệu một chút về thanh nhạc đi
+    - giới thiệu về thanh nhạc
+    - giới thiệu thanh nhạc
+- intent: gt_piano
+  examples: |
+    - giới thiệu về ngành Piano được không ạ
+    - Piano là ngành như thế nào
+    - giới thiệu đôi chút về ngành Piano được không ạ
+    - piano là ngành gì
+    - piano là gì
+    - piano
+    - giới thiệu về piano đi
+    - giới thiệu piano đi
+    - giới thiệu một chút về piano đi
+    - giới thiệu về piano
+    - giới thiệu piano
+- intent: gt_dvien
+  examples: |
+    - giới thiệu về ngành Diễn viên được không ạ
+    - Diễn viên là ngành như thế nào
+    - giới thiệu đôi chút về ngành Diễn viên được không ạ
+    - diễn viên là ngành gì
+    - diễn viên là gì
+    - diễn viên
+    - giới thiệu về diễn viên đi
+    - giới thiệu diễn viên đi
+    - giới thiệu một chút về diễn viên đi
+    - giới thiệu về diễn viên
+    - giới thiệu diễn viên
+- intent: gt_ddien
+  examples: |
+    - giới thiệu về ngành Đạo diễn được không ạ
+    - Đạo diễn là ngành như thế nào
+    - giới thiệu đôi chút về ngành Đạo diễn được không ạ
+    - đạo diễn là ngành gì
+    - đạo diễn là gì
+    - đạo diễn
+    - giới thiệu về đạo diễn đi
+    - giới thiệu đạo diễn đi
+    - giới thiệu một chút về đạo diễn đi
+    - giới thiệu về đạo diễn
+    - giới thiệu đạo diễn
+- intent: gt_qphim
+  examples: |
+    - giới thiệu về ngành Quay phim được không ạ
+    - Quay phim là ngành như thế nào
+    - giới thiệu đôi chút về ngành Quay phim được không ạ
+    - quay phim là ngành gì
+    - quay phim là gì
+    - quay phim
+    - giới thiệu về quay phim đi
+    - giới thiệu quay phim đi
+    - giới thiệu một chút về quay phim đi
+    - giới thiệu về quay phim
+    - giới thiệu quay phim
+- intent: gt_tkdh
+  examples: |
+    - giới thiệu về ngành Thiết kế đồ họa được không ạ
+    - Thiết kế đồ họa là ngành như thế nào
+    - giới thiệu đôi chút về ngành Thiết kế đồ họa được không ạ
+    - thiết kế đồ hoạ là ngành gì
+    - thiết kế đồ hoạ là gì
+    - thiết kế đồ hoạ
+    - giới thiệu về thiết kế đồ hoạ đi
+    - giới thiệu thiết kế đồ hoạ đi
+    - giới thiệu một chút về thiết kế đồ hoạ đi
+    - giới thiệu về thiết kế đồ hoạ
+    - giới thiệu thiết kế đồ hoạ
+- intent: gt_vhvn
+  examples: |
+    - giới thiệu về ngành Tiếng Việt & Văn hóa Việt Nam được không ạ
+    - Tiếng Việt & Văn hóa Việt Nam là ngành như thế nào
+    - giới thiệu đôi chút về ngành Tiếng Việt & Văn hóa Việt Nam được không ạ
+    - Tiếng Việt & Văn hóa Việt Nam là ngành gì
+    - Tiếng Việt & Văn hóa Việt Nam là gì
+    - Tiếng Việt & Văn hóa Việt Nam
+    - giới thiệu về Tiếng Việt & Văn hóa Việt Nam đi
+    - giới thiệu Tiếng Việt & Văn hóa Việt Nam đi
+    - giới thiệu một chút về Tiếng Việt & Văn hóa Việt Nam đi
+    - giới thiệu về Tiếng Việt & Văn hóa Việt Nam
+    - giới thiệu Tiếng Việt & Văn hóa Việt Nam
+- intent: gt_nna
+  examples: |
+    - giới thiệu về ngành Ngôn ngữ Anh được không ạ
+    - Ngôn ngữ Anh là ngành như thế nào
+    - giới thiệu đôi chút về ngành Ngôn ngữ Anh được không ạ
+    - ngôn ngữ anh là ngành gì
+    - ngôn ngữ anh là gì
+    - ngôn ngữ anh
+    - giới thiệu về ngôn ngữ anh đi
+    - giới thiệu ngôn ngữ anh đi
+    - giới thiệu một chút về ngôn ngữ anh đi
+    - giới thiệu về ngôn ngữ anh
+    - giới thiệu ngôn ngữ anh
+    - cho em hoi ve nganh ngon ngu anh
+- intent: gt_nntq
+  examples: |
+    - giới thiệu về ngành Ngôn ngữ Trung Quốc được không ạ
+    - Ngôn ngữ Trung Quốc là ngành như thế nào
+    - giới thiệu đôi chút về ngành Ngôn ngữ Trung Quốc được không ạ
+    - ngôn ngữ trung quốc là ngành gì
+    - ngôn ngữ trung quốc là gì
+    - ngôn ngữ trung quốc
+    - giới thiệu về ngôn ngữ trung quốc đi
+    - giới thiệu ngôn ngữ trung quốc đi
+    - giới thiệu một chút về ngôn ngữ trung quốc đi
+    - giới thiệu về ngôn ngữ trung quốc
+    - giới thiệu ngôn ngữ trung quốc
+- intent: gt_qhqt
+  examples: |
+    - giới thiệu về ngành Quan hệ quốc tế được không ạ
+    - Quan hệ quốc tế là ngành như thế nào
+    - giới thiệu đôi chút về ngành Quan hệ quốc tế được không ạ
+    - quan hệ quốc tế là ngành gì
+    - quan hệ quốc tế là gì
+    - quan hệ quốc tế
+    - giới thiệu về quan hệ quốc tế đi
+    - giới thiệu quan hệ quốc tế đi
+    - giới thiệu một chút về quan hệ quốc tế đi
+    - giới thiệu về quan hệ quốc tế
+    - giới thiệu quan hệ quốc tế
+- intent: gt_tlh
+  examples: |
+    - giới thiệu về ngành Tâm lý học được không ạ
+    - Tâm lý học là ngành như thế nào
+    - giới thiệu đôi chút về ngành Tâm lý học được không ạ
+    - tâm lý học là ngành gì
+    - tâm lý học là gì
+    - tâm lý học
+    - giới thiệu về tâm lý học đi
+    - giới thiệu tâm lý học đi
+    - giới thiệu một chút về tâm lý học đi
+    - giới thiệu về tâm lý học
+    - giới thiệu tâm lý học
+- intent: gt_dph
+  examples: |
+    - giới thiệu về ngành Đông phương học được không ạ
+    - Đông phương học là ngành như thế nào
+    - giới thiệu đôi chút về ngành Đông phương học được không ạ
+    - đông phương học là ngành gì
+    - đông phương học là gì
+    - đông phương học
+    - giới thiệu về đông phương học đi
+    - giới thiệu đông phương học đi
+    - giới thiệu một chút về đông phương học đi
+    - giới thiệu về đông phương học
+    - giới thiệu đông phương học
+- intent: gt_vnh
+  examples: |
+    - giới thiệu về ngành Việt Nam học được không ạ
+    - Việt Nam học là ngành như thế nào
+    - giới thiệu đôi chút về ngành Việt Nam học được không ạ
+    - việt nam học là ngành gì
+    - việt nam học là gì
+    - việt nam học
+    - giới thiệu về việt nam học đi
+    - giới thiệu việt nam học đi
+    - giới thiệu một chút về việt nam học đi
+    - giới thiệu về việt nam học
+    - giới thiệu việt nam học
+- intent: gt_dpt
+  examples: |
+    - giới thiệu về ngành Truyền thông đa phương tiện được không ạ
+    - Truyền thông đa phương tiện là ngành như thế nào
+    - giới thiệu đôi chút về ngành Truyền thông đa phương tiện được không ạ
+    - Truyền thông đa phương tiện là ngành gì
+    - Truyền thông đa phương tiện là gì
+    - Truyền thông đa phương tiện
+    - giới thiệu về Truyền thông đa phương tiện đi
+    - giới thiệu Truyền thông đa phương tiện đi
+    - giới thiệu một chút về Truyền thông đa phương tiện đi
+    - giới thiệu về Truyền thông đa phương tiện
+    - giới thiệu Truyền thông đa phương tiện
+- intent: gt_qhcc
+  examples: |
+    - giới thiệu về ngành Quan hệ công chúng được không ạ
+    - Quan hệ công chúng là ngành như thế nào
+    - giới thiệu đôi chút về ngành Quan hệ công chúng được không ạ
+    - Quan hệ công chúng là ngành gì
+    - Quan hệ công chúng là gì
+    - Quan hệ công chúng
+    - giới thiệu về Quan hệ công chúng đi
+    - giới thiệu Quan hệ công chúng đi
+    - giới thiệu một chút về Quan hệ công chúng đi
+    - giới thiệu về Quan hệ công chúng
+    - giới thiệu Quan hệ công chúng
+- intent: gt_qtkd
+  examples: |
+    - giới thiệu về ngành Quản trị kinh doanh được không ạ
+    - Quản trị kinh doanh là ngành như thế nào
+    - giới thiệu đôi chút về ngành Quản trị kinh doanh được không ạ
+    - Quản trị kinh doanh là ngành gì
+    - Quản trị kinh doanh là gì
+    - Quản trị kinh doanh
+    - giới thiệu về Quản trị kinh doanh đi
+    - giới thiệu Quản trị kinh doanh đi
+    - giới thiệu một chút về Quản trị kinh doanh đi
+    - giới thiệu về Quản trị kinh doanh
+    - giới thiệu Quản trị kinh doanh
+- intent: gt_mar
+  examples: |
+    - giới thiệu về ngành Marketing được không ạ
+    - Marketing là ngành như thế nào
+    - giới thiệu đôi chút về ngành Marketing được không ạ
+    - marketing là ngành gì
+    - marketing là gì
+    - marketing
+    - giới thiệu về marketing đi
+    - giới thiệu marketing đi
+    - giới thiệu một chút về marketing đi
+    - giới thiệu về marketing
+    - giới thiệu marketing
+- intent: gt_kdqt
+  examples: |
+    - giới thiệu về ngành Kinh doanh quốc tế được không ạ
+    - Kinh doanh quốc tế là ngành như thế nào
+    - giới thiệu đôi chút về ngành Kinh doanh quốc tế được không ạ
+    - kinh doanh quốc tế là ngành gì
+    - kinh doanh quốc tế là gì
+    - kinh doanh quốc tế
+    - giới thiệu về kinh doanh quốc tế đi
+    - giới thiệu kinh doanh quốc tế đi
+    - giới thiệu một chút về kinh doanh quốc tế đi
+    - giới thiệu về kinh doanh quốc tế
+    - giới thiệu kinh doanh quốc tế
+- intent: gt_tcnh
+  examples: |
+    - giới thiệu về ngành Tài chính ngân hàng được không ạ
+    - Tài chính ngân hàng là ngành như thế nào
+    - giới thiệu đôi chút về ngành Tài chính ngân hàng được không ạ
+    - tài chính ngân hàng là ngành gì
+    - tài chính ngân hàng là gì
+    - tài chính ngân hàng
+    - giới thiệu về tài chính ngân hàng đi
+    - giới thiệu tài chính ngân hàng đi
+    - giới thiệu một chút về tài chính ngân hàng đi
+    - giới thiệu về tài chính ngân hàng
+    - giới thiệu tài chính ngân hàng
+- intent: gt_ktoan
+  examples: |
+    - giới thiệu về ngành Kế toán được không ạ
+    - Kế toán là ngành như thế nào
+    - giới thiệu đôi chút về ngành Kế toán được không ạ
+    - kế toán là ngành gì
+    - kế toán là gì
+    - kế toán
+    - giới thiệu về kế toán đi
+    - giới thiệu kế toán đi
+    - giới thiệu một chút về kế toán đi
+    - giới thiệu về kế toán
+    - giới thiệu kế toán
+- intent: gt_tmdt
+  examples: |
+    - giới thiệu về ngành Thương mại điện tử được không ạ
+    - Thương mại điện tử là ngành như thế nào
+    - giới thiệu đôi chút về ngành Thương mại điện tử được không ạ
+    - thương mại điện tử là ngành gì
+    - thương mại điện tử là gì
+    - thương mại điện tử
+    - giới thiệu về thương mại điện tử đi
+    - giới thiệu thương mại điện tử đi
+    - giới thiệu một chút về thương mại điện tử đi
+    - giới thiệu về thương mại điện tử
+    - giới thiệu thương mại điện tử
+- intent: gt_qtnl
+  examples: |
+    - giới thiệu về ngành Quản trị nhân lực được không ạ
+    - Quản trị nhân lực là ngành như thế nào
+    - giới thiệu đôi chút về ngành Quản trị nhân lực được không ạ
+    - quản trị nhân lực là ngành gì
+    - quản trị nhân lực là gì
+    - quản trị nhân lực
+    - giới thiệu về quản trị nhân lực đi
+    - giới thiệu quản trị nhân lực đi
+    - giới thiệu một chút về quản trị nhân lực đi
+    - giới thiệu về quản trị nhân lực
+    - giới thiệu quản trị nhân lực
+- intent: gt_lkt
+  examples: |
+    - giới thiệu về ngành Luật kinh tế được không ạ
+    - Luật kinh tế là ngành như thế nào
+    - giới thiệu đôi chút về ngành Luật kinh tế được không ạ
+    - luật kinh tế là ngành gì
+    - luật kinh tế là gì
+    - luật kinh tế
+    - giới thiệu về luật kinh tế đi
+    - giới thiệu luật kinh tế đi
+    - giới thiệu một chút về luật kinh tế đi
+    - giới thiệu về luật kinh tế
+    - giới thiệu luật kinh tế
+- intent: gt_cnsh
+  examples: |
+    - giới thiệu về ngành Công nghệ sinh học được không ạ
+    - Công nghệ sinh học là ngành như thế nào
+    - giới thiệu đôi chút về Công nghệ sinh học học được không ạ
+    - công nghệ sinh học là ngành gì
+    - công nghệ sinh học là gì
+    - công nghệ sinh học
+    - giới thiệu về công nghệ sinh học đi
+    - giới thiệu công nghệ sinh học đi
+    - giới thiệu một chút về công nghệ sinh học đi
+    - giới thiệu về công nghệ sinh học
+    - giới thiệu công nghệ sinh học
+- intent: gt_ktpm
+  examples: |
+    - giới thiệu về ngành Kỹ thuật phần mềm được không ạ
+    - Kỹ thuật phần mềm là ngành như thế nào
+    - giới thiệu đôi chút về ngành Kỹ thuật phần mềm được không ạ
+    - kỹ thuật phần mềm là ngành gì
+    - kỹ thuật phần mềm là gì
+    - kỹ thuật phần mềm
+    - giới thiệu về kỹ thuật phần mềm đi
+    - giới thiệu kỹ thuật phần mềm đi
+    - giới thiệu một chút về kỹ thuật phần mềm đi
+    - giới thiệu về kỹ thuật phần mềm
+    - giới thiệu kỹ thuật phần mềm
+- intent: gt_mmt
+  examples: |
+    - giới thiệu về ngành Mạng máy tính và Truyền thông dữ liệu được không ạ
+    - Mạng máy tính và Truyền thông dữ liệu là ngành như thế nào
+    - giới thiệu đôi chút về ngành Mạng máy tính và Truyền thông dữ liệu được không ạ
+    - mạng máy tính và truyền thông dữ liệu là ngành gì
+    - mạng máy tính và truyền thông dữ liệu là gì
+    - mạng máy tính và truyền thông dữ liệu
+    - giới thiệu về mạng máy tính và truyền thông dữ liệu đi
+    - giới thiệu mạng máy tính và truyền thông dữ liệu đi
+    - giới thiệu một chút về mạng máy tính và truyền thông dữ liệu đi
+    - giới thiệu về mạng máy tính và truyền thông dữ liệu
+    - giới thiệu mạng máy tính và truyền thông dữ liệu
+- intent: gt_cntt
+  examples: |
+    - giới thiệu về ngành Công nghệ thông tin được không ạ
+    - Công nghệ thông tin là ngành như thế nào
+    - giới thiệu đôi chút về ngành Công nghệ thông tin được không ạ
+    - công nghệ thông tin là ngành gì
+    - công nghệ thông tin là gì
+    - công nghệ thông tin
+    - giới thiệu về công nghệ thông tin đi
+    - giới thiệu công nghệ thông tin đi
+    - giới thiệu một chút về công nghệ thông tin đi
+    - giới thiệu về công nghệ thông tin
+    - giới thiệu công nghệ thông tin
+- intent: gt_cdt
+  examples: |
+    - giới thiệu về ngành Công nghệ kỹ thuật cơ điện tử được không ạ
+    - Công nghệ kỹ thuật cơ điện tử là ngành như thế nào
+    - giới thiệu đôi chút về ngành Công nghệ kỹ thuật cơ điện tử được không ạ
+    - công nghệ kỹ thuật cơ điện tử là ngành gì
+    - công nghệ kỹ thuật cơ điện tử là gì
+    - công nghệ kỹ thuật cơ điện tử
+    - giới thiệu về công nghệ kỹ thuật cơ điện tử đi
+    - giới thiệu công nghệ kỹ thuật cơ điện tử đi
+    - giới thiệu một chút về công nghệ kỹ thuật cơ điện tử đi
+    - giới thiệu về công nghệ kỹ thuật cơ điện tử
+    - giới thiệu công nghệ kỹ thuật cơ điện tử
+- intent: gt_oto
+  examples: |
+    - giới thiệu về ngành Công nghệ kỹ thuật ô tô được không ạ
+    - Công nghệ kỹ thuật ô tô là ngành như thế nào
+    - giới thiệu đôi chút về ngành Công nghệ kỹ thuật ô tô được không ạ
+    - công nghệ kỹ thuật ô tô là ngành gì
+    - công nghệ kỹ thuật ô tô là gì
+    - công nghệ kỹ thuật ô tô
+    - giới thiệu về công nghệ kỹ thuật ô tô đi
+    - giới thiệu công nghệ kỹ thuật ô tô đi
+    - giới thiệu một chút về công nghệ kỹ thuật ô tô đi
+    - giới thiệu về công nghệ kỹ thuật ô tô
+    - giới thiệu công nghệ kỹ thuật ô tô
+- intent: gt_ddt
+  examples: |
+    - giới thiệu về ngành Công nghệ kỹ thuật điện - điện tử được không ạ
+    - Công nghệ kỹ thuật điện - điện tử là ngành như thế nào
+    - giới thiệu đôi chút về ngành Công nghệ kỹ thuật điện - điện tử được không ạ
+    - công nghệ kỹ thuật điện - điện tử là ngành gì
+    - công nghệ kỹ thuật điện - điện tử là gì
+    - công nghệ kỹ thuật điện - điện tử
+    - giới thiệu về công nghệ kỹ thuật điện - điện tử đi
+    - giới thiệu công nghệ kỹ thuật điện - điện tử đi
+    - giới thiệu một chút về công nghệ kỹ thuật điện - điện tử đi
+    - giới thiệu về công nghệ kỹ thuật điện - điện tử
+    - giới thiệu công nghệ kỹ thuật điện - điện tử
+- intent: gt_kthh
+  examples: |
+    - giới thiệu về ngành Công nghệ kỹ thuật hoá học được không ạ
+    - Công nghệ kỹ thuật hoá học là ngành như thế nào
+    - giới thiệu đôi chút về ngành Công nghệ kỹ thuật hoá học được không ạ
+    - công nghệ kỹ thuật hoá học là ngành gì
+    - công nghệ kỹ thuật hoá học là gì
+    - công nghệ kỹ thuật hoá học
+    - giới thiệu về công nghệ kỹ thuật hoá học đi
+    - giới thiệu công nghệ kỹ thuật hoá học đi
+    - giới thiệu một chút về công nghệ kỹ thuật hoá học đi
+    - giới thiệu về công nghệ kỹ thuật hoá học
+    - giới thiệu công nghệ kỹ thuật hoá học
+- intent: gt_log
+  examples: |
+    - giới thiệu về ngành logistics và quản lý chuỗi cung ứng được không ạ
+    - logistics và quản lý chuỗi cung ứng là ngành như thế nào
+    - giới thiệu đôi chút về ngành logistics và quản lý chuỗi cung ứng được không ạ
+    - logistics và quản lý chuỗi cung ứng là ngành gì
+    - logistics và quản lý chuỗi cung ứng là gì
+    - logistics và quản lý chuỗi cung ứng
+    - giới thiệu về logistics và quản lý chuỗi cung ứng đi
+    - giới thiệu logistics và quản lý chuỗi cung ứng đi
+    - giới thiệu một chút về logistics và quản lý chuỗi cung ứng đi
+    - giới thiệu về logistics và quản lý chuỗi cung ứng
+    - giới thiệu logistics và quản lý chuỗi cung ứng
+- intent: gt_htcn
+  examples: |
+    - giới thiệu về ngành kỹ thuật hệ thống công nghiệp được không ạ
+    - Kỹ thuật hệ thống công nghiệp là ngành như thế nào
+    - giới thiệu đôi chút về ngành Kỹ thuật hệ thống công nghiệp được không ạ
+    - kỹ thuật hệ thống công nghiệp là ngành gì
+    - kỹ thuật hệ thống công nghiệp là gì
+    - kỹ thuật hệ thống công nghiệp
+    - giới thiệu về kỹ thuật hệ thống công nghiệp đi
+    - giới thiệu kỹ thuật hệ thống công nghiệp đi
+    - giới thiệu một chút về kỹ thuật hệ thống công nghiệp đi
+    - giới thiệu về kỹ thuật hệ thống công nghiệp
+    - giới thiệu kỹ thuật hệ thống công nghiệp
+- intent: gt_ktys
+  examples: |
+    - giới thiệu về ngành kỹ thuật y sinh được không ạ
+    - Kỹ thuật y sinh là ngành như thế nào
+    - giới thiệu đôi chút về ngành Kỹ thuật y sinh được không ạ
+    - kỹ thuật y sinh là ngành gì
+    - kỹ thuật y sinh là gì
+    - kỹ thuật y sinh
+    - giới thiệu về kỹ thuật y sinh đi
+    - giới thiệu kỹ thuật y sinh đi
+    - giới thiệu một chút về kỹ thuật y sinh đi
+    - giới thiệu về kỹ thuật y sinh
+    - giới thiệu kỹ thuật y sinh
+- intent: gt_vlyk
+  examples: |
+    - giới thiệu về ngành vật lý y khoa được không ạ
+    - Vật lý y khoa là ngành như thế nào
+    - giới thiệu đôi chút về ngành Vật lý y khoa được không ạ
+    - vật lý y khoa là ngành gì
+    - vật lý y khoa là gì
+    - vật lý y khoa
+    - giới thiệu về vật lý y khoa đi
+    - giới thiệu vật lý y khoa đi
+    - giới thiệu một chút về vật lý y khoa đi
+    - giới thiệu về vật lý y khoa
+    - giới thiệu vật lý y khoa
+- intent: gt_cntp
+  examples: |
+    - giới thiệu về ngành công nghệ thực phẩm được không ạ
+    - Công nghệ thực phẩm là ngành như thế nào
+    - giới thiệu đôi chút về ngành Công nghệ thực phẩm được không ạ
+    - công nghệ thực phẩm là ngành gì
+    - công nghệ thực phẩm là gì
+    - công nghệ thực phẩm
+    - giới thiệu về công nghệ thực phẩm đi
+    - giới thiệu công nghệ thực phẩm đi
+    - giới thiệu một chút về công nghệ thực phẩm đi
+    - giới thiệu về công nghệ thực phẩm
+    - giới thiệu công nghệ thực phẩm
+- intent: gt_ktruc
+  examples: |
+    - giới thiệu về ngành kiến trúc được không ạ
+    - Kiến trúc là ngành như thế nào
+    - giới thiệu đôi chút về ngành Kiến trúc được không ạ
+    - kiến trúc là ngành gì
+    - kiến trúc là gì
+    - kiến trúc
+    - giới thiệu về kiến trúc đi
+    - giới thiệu kiến trúc đi
+    - giới thiệu một chút về kiến trúc đi
+    - giới thiệu về kiến trúc
+    - giới thiệu kiến trúc
+- intent: gt_tknt
+  examples: |
+    - giới thiệu về ngành thiết kế nội thất được không ạ
+    - Thiết kế nội thất là ngành như thế nào
+    - giới thiệu đôi chút về ngành Thiết kế nội thất được không ạ
+    - thiết kế nội thất là ngành gì
+    - thiết kế nội thất là gì
+    - thiết kế nội thất
+    - giới thiệu về thiết kế nội thất đi
+    - giới thiệu thiết kế nội thất đi
+    - giới thiệu một chút về thiết kế nội thất đi
+    - giới thiệu về thiết kế nội thất
+    - giới thiệu thiết kế nội thất
+- intent: gt_ktxd
+  examples: |
+    - giới thiệu về ngành kỹ thuật xây dựng được không ạ
+    - Kỹ thuật xây dựng là ngành như thế nào
+    - giới thiệu đôi chút về ngành Kỹ thuật xây dựng được không ạ
+    - kỹ thuật xây dựng là ngành gì
+    - kỹ thuật xây dựng là gì
+    - kỹ thuật xây dựng
+    - giới thiệu về kỹ thuật xây dựng đi
+    - giới thiệu kỹ thuật xây dựng đi
+    - giới thiệu một chút về kỹ thuật xây dựng đi
+    - giới thiệu về kỹ thuật xây dựng
+    - giới thiệu kỹ thuật xây dựng
+- intent: gt_qtks
+  examples: |
+    - giới thiệu về ngành quản trị khách sạn được không ạ
+    - Quản trị khách sạn là ngành như thế nào
+    - giới thiệu đôi chút về ngành Quản trị khách sạn được không ạ
+    - quản trị khách sạn là ngành gì
+    - quản trị khách sạn là gì
+    - quản trị khách sạn
+    - giới thiệu về quản trị khách sạn đi
+    - giới thiệu quản trị khách sạn đi
+    - giới thiệu một chút về quản trị khách sạn đi
+    - giới thiệu về quản trị khách sạn
+    - giới thiệu quản trị khách sạn
+- intent: gt_nhhang
+  examples: |
+    - giới thiệu về ngành quản trị nhà hàng và dịch vụ ăn uống được không ạ
+    - quản trị nhà hàng và dịch vụ ăn uống là ngành như thế nào
+    - giới thiệu đôi chút về ngành quản trị nhà hàng và dịch vụ ăn uống được không ạ
+    - quản trị nhà hàng và dịch vụ ăn uống là ngành gì
+    - quản trị nhà hàng và dịch vụ ăn uống là gì
+    - quản trị nhà hàng và dịch vụ ăn uống
+    - giới thiệu về quản trị nhà hàng và dịch vụ ăn uống đi
+    - giới thiệu quản trị nhà hàng và dịch vụ ăn uống đi
+    - giới thiệu một chút về quản trị nhà hàng và dịch vụ ăn uống đi
+    - giới thiệu về quản trị nhà hàng và dịch vụ ăn uống
+    - giới thiệu quản trị nhà hàng và dịch vụ ăn uống
+- intent: gt_dlich
+  examples: |
+    - giới thiệu về ngành du lịch được không ạ
+    - Du lịch là ngành như thế nào
+    - giới thiệu đôi chút về ngành Du lịch được không ạ
+    - du lịch là ngành gì
+    - du lịch là gì
+    - du lịch
+    - giới thiệu về du lịch đi
+    - giới thiệu du lịch đi
+    - giới thiệu một chút về du lịch đi
+    - giới thiệu về du lịch
+    - giới thiệu du lịch
+- intent: gt_tnmt
+  examples: |
+    - giới thiệu về ngành quản lý tài nguyên và môi trường được không ạ
+    - quản lý tài nguyên và môi trường là ngành như thế nào
+    - giới thiệu đôi chút về ngành quản lý tài nguyên và môi trường được không ạ
+    - quản lý tài nguyên và môi trường là ngành gì
+    - quản lý tài nguyên và môi trường là gì
+    - quản lý tài nguyên và môi trường
+    - giới thiệu về quản lý tài nguyên và môi trường đi
+    - giới thiệu quản lý tài nguyên và môi trường đi
+    - giới thiệu một chút về quản lý tài nguyên và môi trường đi
+    - giới thiệu về quản lý tài nguyên và môi trường
+    - giới thiệu quản lý tài nguyên và môi trường
+- intent: cam_on
+  examples: |
+    - em cam on a
