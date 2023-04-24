@@ -1,4 +1,7 @@
-version: "2.0"
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
 - cam_on
 - chao_hoi
@@ -797,9 +800,6 @@ responses:
   - text: |-
       Cơ hội nghề nghiệp: 
        • Chuyên viên môi trường tại các sở, ban, ngành như sở tài nguyên và môi trường; sở khoa học và công nghệ, sở nông nghiệp & phát triển nông thôn hoặc tại các trung tâm bảo vệ môi trường. • Chuyên viên thiết kế, chế tạo, lắp đặt, vận hành, bảo trì, sửa chữa các thiết bị, hệ thống của ngành kỹ thuật và công nghệ xử lý môi trường. • Vận hành công nghệ tái chế chất thải và xử lý nước cấp. nước thải, rác thải, khí thải cho các nhà máy, công ty, các khu công nghiệp, khu chế xuất... • Nghiên cứu chuyên sâu về lĩnh vực môi trường tại các trường đại học, viện nghiên cứu.
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
 actions:
 - utter_phuong_thuc_tuyen_sinh
 - utter_chao_hoi
